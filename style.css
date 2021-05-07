@@ -1,0 +1,294 @@
+:root {
+  --pink: rgb(255, 102, 196);
+  --pinkPastel: rgb(255, 173, 224);
+  --magenta: rgb(203, 108, 230);
+  --magentaPastel: rgb(225, 168, 240);
+  --purple: rgb(140, 82, 255);
+  --purplePastel: rgb(187, 153, 255);
+  --yellow: rgb(243, 210, 80);
+  --offwhite: rgb(236, 236, 236);
+  --black: rgb(28, 33, 32);
+}
+
+@font-face {
+  font-family: Spartan;
+  src: url(./fonts/LeagueSpartan-Bold.otf);
+}
+
+@font-face {
+  font-family: HK Grotesk Light;
+  src: url(./fonts/HKGrotesk-Light.otf);
+}
+
+@font-face {
+  font-family: HK Grotesk Med;
+  src: url(./fonts/HKGrotesk-Medium.otf);
+}
+
+body {
+  background-color: white;
+}
+
+h1 {
+  color: var(--black);
+  font-family: Spartan;
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: HK Grotesk Light;
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-family: HK Grotesk Med;
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+p {
+  font-family: HK Grotesk Med;
+  font-size: 1rem;
+}
+
+#about,
+#experience,
+#projects,
+#involvement {
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.navbar {
+  align-items: center;
+  background: var(--offwhite);
+  box-sizing: border-box;
+  display: flex;
+  height: 15%;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 60px;
+}
+
+nav ul li a {
+  color: var(--black);
+  font-family: HK Grotesk Light;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: var(--black);
+  font-family: HK Grotesk Med;
+  text-decoration: underline;
+}
+
+button {
+  border-radius: 8px;
+  font-family: HK Grotesk Light;
+  font-size: 20px;
+  transition-duration: 0.3s;
+}
+
+button:hover {
+  background-color: var(--purple);
+  color: var(--offwhite);
+}
+
+.logo {
+  cursor: pointer;
+  width: 100px;
+}
+
+.intro {
+  background-image: url(./images/website_backgrounds.png);
+  background-position: right top;
+  background-size: cover;
+  box-sizing: border-box;
+  padding: 8%;
+  text-align: left;
+}
+
+.intro-column {
+  float: right;
+  margin-right: 7%;
+}
+
+.typed-div {
+  align-items: baseline;
+  display: flex;
+}
+
+.typed-div h1 {
+  margin-top: 0;
+}
+
+#cursor {
+  font-family: HK Grotesk Med;
+  font-size: 3rem;
+}
+
+#about {
+  background: var(--magentaPastel);
+  padding: 5% 5% 5% 8%;
+}
+
+#about:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.about-list {
+  float: left;
+}
+
+.about-list ul li {
+  font-family: HK Grotesk Med;
+  font-size: 1rem;
+  list-style: none;
+}
+
+.about-list ul li span {
+  padding-right: 5px;
+}
+
+.headshot {
+  border-radius: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.resume-button {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+#experience {
+  background: var(--purplePastel);
+  padding: 8%;
+}
+
+#projects {
+  background: var(--pinkPastel);
+  height: 80rem;
+  padding: 3% 8% 8% 8%;
+}
+
+.column a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.column h2 {
+  margin-top: 0;
+}
+
+.project-img,
+.project-img-one,
+.project-img-two {
+  border-radius: 8px;
+  display: block;
+}
+
+.project-img {
+  margin: 10% auto 10% 10%;
+  width: 100%;
+}
+
+.project-img-one {
+  margin: 10% 50px 10% auto;
+  width: 50%;
+}
+
+.project-img-two {
+  margin: 10% auto 10% 50px;
+  width: 50%;
+}
+
+#involvement {
+  background: var(--yellow);
+  padding: 8%;
+}
+
+#contact {
+  background: var(--offwhite);
+  box-sizing: border-box;
+  padding: 8%;
+  text-align: center;
+}
+
+#contact h1 {
+  margin-bottom: 0;
+}
+
+.contact-h2 {
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+}
+
+.social-media {
+  text-align: center;
+}
+
+.icons {
+  border-radius: 50%;
+  color: var(--black);
+  font-size: 3rem;
+  margin: 5px 2px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  width: 30px;
+}
+
+.icons:hover {
+  opacity: 0.7;
+}
+
+.form-h2 {
+  margin: 2rem auto 1rem auto;
+}
+
+.submit-button {
+  border-radius: 8px;
+  font-family: HK Grotesk Light;
+  font-size: 20px;
+  margin-top: 1rem;
+  transition-duration: 0.3s;
+}
+
+.submit-button:hover {
+  background-color: var(--purple);
+  color: var(--offwhite);
+}
+
+textarea {
+  background-color: var(--offwhite);
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-family: HK Grotesk Med;
+  font-size: 1rem;
+  padding: 20px 20px 0 20px;
+  resize: none;
+  width: 75%;
+}
